@@ -1,0 +1,5 @@
+\\bournemouth.ac.uk\data\Student\Home\SciTech\s4921851\- Term 2\Games Design Pipeline\Lab2again\Lab2again\obj\Debug\Lab2again.csprojResolveAssemblyReference.cache
+\\bournemouth.ac.uk\data\Student\Home\SciTech\s4921851\- Term 2\Games Design Pipeline\Lab2again\Lab2again\bin\Debug\Lab2again.dll
+\\bournemouth.ac.uk\data\Student\Home\SciTech\s4921851\- Term 2\Games Design Pipeline\Lab2again\Lab2again\bin\Debug\Lab2again.pdb
+\\bournemouth.ac.uk\data\Student\Home\SciTech\s4921851\- Term 2\Games Design Pipeline\Lab2again\Lab2again\obj\Debug\Lab2again.dll
+\\bournemouth.ac.uk\data\Student\Home\SciTech\s4921851\- Term 2\Games Design Pipeline\Lab2again\Lab2again\obj\Debug\Lab2again.pdb

@@ -1,0 +1,6 @@
+H:\- Term 2\Games Design Pipeline\Enumerations\Enumerations\bin\Debug\Enumerations.exe.config
+H:\- Term 2\Games Design Pipeline\Enumerations\Enumerations\bin\Debug\Enumerations.exe
+H:\- Term 2\Games Design Pipeline\Enumerations\Enumerations\bin\Debug\Enumerations.pdb
+H:\- Term 2\Games Design Pipeline\Enumerations\Enumerations\obj\Debug\Enumerations.csprojResolveAssemblyReference.cache
+H:\- Term 2\Games Design Pipeline\Enumerations\Enumerations\obj\Debug\Enumerations.exe
+H:\- Term 2\Games Design Pipeline\Enumerations\Enumerations\obj\Debug\Enumerations.pdb

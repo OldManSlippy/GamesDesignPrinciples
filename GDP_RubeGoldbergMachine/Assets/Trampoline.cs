@@ -14,6 +14,7 @@ public class Trampoline : MonoBehaviour {
         if (collision.gameObject.name == "Trampoline")
         {
             actor.velocity = new Vector3(0, trampoline, 0);
+
         }
 	}
 }

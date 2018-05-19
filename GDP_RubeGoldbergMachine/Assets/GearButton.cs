@@ -5,31 +5,22 @@ using UnityEngine;
 public class GearButton : MonoBehaviour {
 
     public bool notmoving;
-    public GameObject gear;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+    public GameObject Gear;
+    public GameObject Gear2;
     private void OnTriggerEnter(Collider other)
     {
-       
         if(notmoving)
         {
-
-            HingeJoint gearhinge =(HingeJoint) gear.gameObject.GetComponent(typeof(HingeJoint));
-
-            gearhinge.useMotor = true;
-
             notmoving = false;
+        }       
+    }
+    void Update()
+    {
+        if (notmoving == false)
+        {
+            Gear.transform.Rotate(0, 2, 0);
+            Gear2.transform.Rotate(0, -2, 0);
 
         }
-
     }
-
 }

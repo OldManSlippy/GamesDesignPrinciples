@@ -78,6 +78,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Cannon.cs" />
     <Compile Include="Assets\GearButton.cs" />
     <Compile Include="Assets\Trampoline.cs" />
     <Compile Include="Assets\Wind.cs" />

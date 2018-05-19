@@ -7,6 +7,7 @@ public class GearButton : MonoBehaviour {
     public bool notmoving;
     public GameObject Gear;
     public GameObject Gear2;
+    public GameObject Fan;
     private void OnTriggerEnter(Collider other)
     {
         if(notmoving)
@@ -20,7 +21,7 @@ public class GearButton : MonoBehaviour {
         {
             Gear.transform.Rotate(0, 2, 0);
             Gear2.transform.Rotate(0, -2, 0);
-
+            Fan.transform.Rotate(0, 10, 0);
         }
     }
 }

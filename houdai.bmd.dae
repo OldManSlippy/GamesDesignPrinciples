@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor v2.3 BETA 2015-10-31-->
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Fiachra</author>
+			<authoring_tool>SM64DS Editor v2.3 BETA 2015-10-31</authoring_tool>
+		</contributor>
+		<created>2017-09-12T04:07:34</created>
+		<modified>2017-09-12T04:07:34</modified>
+		<unit name="meter" meter="1" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="houdai_cmp4-img" name="houdai_cmp4-img">
+			<init_from>houdai_cmp4.png</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="houdai_mat-effect">
+			<profile_COMMON>
+				<newparam sid="houdai_cmp4-img-surface">
+					<surface type="2D">
+						<init_from>houdai_cmp4-img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="houdai_cmp4-img-sampler">
+					<sampler2D>
+						<source>houdai_cmp4-img-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1.0</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1.0</color>
+						</ambient>
+						<diffuse>
+							<texture texture="houdai_cmp4-img-sampler" texcoord="UVMap" />
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1.0</color>
+						</specular>
+						<transparency>
+							<float sid="transparency">1</float>
+						</transparency>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>flip flip</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="houdai_mat-material" name="houdai_mat">
+			<instance_effect url="#houdai_mat-effect" />
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="houdai_joint_0-mesh" name="houdai_joint_0-mesh">
+			<mesh>
+				<source id="houdai_joint_0-mesh-positions">
+					<float_array id="houdai_joint_0-mesh-positions-array" count="336">7.415039 6.874512 -7.415039 7.415039 43.74951 -7.415039 10.4873 43.74951 0 10.4873 6.874512 0 7.415039 43.74951 7.415039 7.415039 6.874512 7.415039 0 43.74951 10.4873 0 6.874512 10.4873 -7.415039 43.74951 7.415039 -7.415039 6.874512 7.415039 -10.4873 43.74951 0 -10.4873 6.874512 0 -7.415039 43.74951 -7.415039 -7.415039 6.874512 -7.415039 0 43.74951 -10.4873 0 6.874512 -10.4873 0 43.74951 7.911133 0 10.63916 7.911133 -5.59375 10.63916 5.59375 -5.59375 43.74951 5.59375 -7.911133 10.63916 0 -7.911133 43.74951 0 -5.59375 10.63916 -5.59375 -5.59375 43.74951 -5.59375 0 10.63916 -7.911133 0 43.74951 -7.911133 5.59375 10.63916 -5.59375 5.59375 43.74951 -5.59375 7.911133 10.63916 0 7.911133 43.74951 0 5.59375 10.63916 5.59375 5.59375 43.74951 5.59375 -7.415039 43.74951 7.415039 -5.59375 43.74951 5.59375 -7.911133 43.74951 0 -10.4873 43.74951 0 -5.59375 43.74951 -5.59375 -7.415039 43.74951 -7.415039 0 43.74951 -7.911133 0 43.74951 -10.4873 5.59375 43.74951 -5.59375 7.415039 43.74951 -7.415039 7.911133 43.74951 0 10.4873 43.74951 0 5.59375 43.74951 5.59375 7.415039 43.74951 7.415039 0 43.74951 7.911133 0 43.74951 10.4873 15.19824 -0.625 -8.658203 10.62305 -0.625 -8.658203 10.62305 22.76758 -8.658203 15.19824 22.76758 -8.658203 10.62305 26.54004 -4.870117 15.19824 26.54004 -4.870117 10.62305 26.54004 4.870117 15.19824 26.54004 4.870117 10.62305 22.75195 8.658203 15.19824 22.75195 8.658203 10.62305 -0.625 8.658203 15.19824 -0.625 8.658203 -10.62305 -0.625 -8.658203 -15.19824 -0.625 -8.658203 -15.19824 22.76758 -8.658203 -10.62305 22.76758 -8.658203 -15.19824 26.54004 -4.870117 -10.62305 26.54004 -4.870117 -15.19824 26.54004 4.870117 -10.62305 26.54004 4.870117 -15.19824 22.75195 8.658203 -10.62305 22.75195 8.658203 -15.19824 -0.625 8.658203 -10.62305 -0.625 8.658203 -15.19824 26.54004 4.870117 -15.19824 26.54004 -4.870117 -15.19824 22.76758 -8.658203 -15.19824 22.75195 8.658203 -15.19824 -0.625 -8.658203 -15.19824 -0.625 8.658203 15.19824 -0.625 8.658203 15.19824 -0.625 -8.658203 15.19824 22.76758 -8.658203 15.19824 22.75195 8.658203 15.19824 26.54004 -4.870117 15.19824 26.54004 4.870117 10.62305 -0.625 -8.658203 10.62305 -0.625 8.658203 10.62305 22.75195 8.658203 10.62305 22.76758 -8.658203 10.62305 26.54004 4.870117 10.62305 26.54004 -4.870117 -10.62305 -0.625 8.658203 -10.62305 -0.625 -8.658203 -10.62305 22.76758 -8.658203 -10.62305 22.75195 8.658203 -10.62305 26.54004 -4.870117 -10.62305 26.54004 4.870117 -5.59375 10.63916 -5.59375 -5.59375 10.63916 5.59375 0 10.63916 7.911133 0 10.63916 -7.911133 5.59375 10.63916 5.59375 5.59375 10.63916 -5.59375 0 1.874512 0 0 1.874512 0 0 1.874512 0 0 1.874512 0 -10.62305 -0.625 8.658203 10.62305 -0.625 8.658203 10.62305 -0.625 -8.658203 -10.62305 -0.625 -8.658203 7.911133 10.63916 0 -7.911133 10.63916 0</float_array>
+					<technique_common>
+						<accessor source="#houdai_joint_0-mesh-positions-array" count="112" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="houdai_joint_0-mesh-normals">
+					<float_array id="houdai_joint_0-mesh-normals-array" count="336">37.75 -35.25 -37.75 30.75 47 -30.75 43.375 47 0 53.375 -35.25 0 30.75 47 30.75 37.75 -35.25 37.75 0 47 43.375 0 -35.25 53.375 -30.75 47 30.75 -37.75 -35.25 37.75 -43.375 47 0 -53.375 -35.25 0 -30.75 47 -30.75 -37.75 -35.25 -37.75 0 47 -43.375 0 -35.25 -53.375 0 47 -43.375 0 0 -64 45.25 0 -45.25 30.75 47 -30.75 63.875 0 0 43.375 47 0 45.25 0 45.25 30.75 47 30.75 0 0 63.875 0 47 43.375 -45.25 0 45.25 -30.75 47 30.75 -64 0 0 -43.375 47 0 -45.25 0 -45.25 -30.75 47 -30.75 -30.75 47 30.75 30.75 47 -30.75 43.375 47 0 -43.375 47 0 30.75 47 30.75 -30.75 47 -30.75 0 47 43.375 0 47 -43.375 -30.75 47 30.75 30.75 47 -30.75 -43.375 47 0 43.375 47 0 -30.75 47 -30.75 30.75 47 30.75 0 47 -43.375 0 47 43.375 0 0 -64 0 0 -64 0 24.5 -59.125 0 24.5 -59.125 0 59.125 -24.375 0 59.125 -24.375 0 59.125 24.5 0 59.125 24.5 0 24.5 59.125 0 24.5 59.125 0 0 63.875 0 0 63.875 0 0 -64 0 0 -64 0 24.5 -59.125 0 24.5 -59.125 0 59.125 -24.375 0 59.125 -24.375 0 59.125 24.5 0 59.125 24.5 0 24.5 59.125 0 24.5 59.125 0 0 63.875 0 0 63.875 -64 0 0 -64 0 0 -64 0 0 -64 0 0 -64 0 0 -64 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 -64 0 0 -64 0 0 -64 0 0 -64 0 0 -64 0 0 -64 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 -64 0 0 -35.25 -53.375 37.75 -35.25 37.75 -53.375 -35.25 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0</float_array>
+					<technique_common>
+						<accessor source="#houdai_joint_0-mesh-normals-array" count="112" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="houdai_joint_0-mesh-map-0">
+					<float_array id="houdai_joint_0-mesh-map-0-array" count="224">1.125 0.640625 1.125 0.265625 1.21875 0.265625 1.21875 0.640625 1.125 0.265625 1.125 0.640625 1 0.265625 1 0.640625 0.875 0.265625 0.875 0.640625 0.78125 0.265625 0.78125 0.640625 0.875 0.265625 0.875 0.640625 1 0.265625 1 0.640625 1 0.265625 1 0.640625 0.875 0.640625 0.875 0.265625 0.78125 0.640625 0.78125 0.265625 0.875 0.640625 0.875 0.265625 1 0.640625 1 0.265625 1.125 0.640625 1.125 0.265625 1.21875 0.640625 1.21875 0.265625 1.125 0.640625 1.125 0.265625 0.1621094 0.1679688 0.2441406 0.1269531 0.1386719 0.0009765625 0.02148438 0.0009765625 0.2441406 -0.125 0.1621094 -0.1660156 0.5 -0.1767578 0.5 -0.2353516 0.7558594 -0.125 0.8398438 -0.1660156 0.8613281 0.0009765625 0.9804688 0.0009765625 0.7558594 0.1269531 0.8398438 0.1679688 0.5 0.1787109 0.5 0.2373047 0.78125 1.296875 1.21875 1.296875 1.21875 0.703125 0.78125 0.703125 1.21875 1.296875 0.78125 1.296875 1.21875 0.703125 0.78125 0.703125 1.21875 1.296875 0.78125 1.296875 1.21875 0.703125 0.78125 0.703125 0.78125 1.296875 1.21875 1.296875 1.21875 0.703125 0.78125 0.703125 1.21875 1.296875 0.78125 1.296875 1.21875 0.703125 0.78125 0.703125 1.21875 1.296875 0.78125 1.296875 1.21875 0.703125 0.78125 0.703125 0.5625 0.265625 0.1875 0.265625 0.03125 0.375 0.71875 0.375 0.03125 0.984375 0.71875 0.984375 0.03125 0.984375 0.71875 0.984375 0.71875 0.375 0.03125 0.375 0.5625 0.265625 0.1875 0.265625 0.03125 0.984375 0.71875 0.984375 0.71875 0.375 0.03125 0.375 0.5625 0.265625 0.1875 0.265625 0.03125 0.984375 0.71875 0.984375 0.71875 0.375 0.03125 0.375 0.5625 0.265625 0.1875 0.265625 0.78125 0.671875 0.78125 0.671875 0.78125 0.671875 0.78125 0.671875 0.78125 0.671875 0.78125 0.671875 1 0.671875 1 0.671875 1 0.671875 1 0.671875 0.78125 1.296875 1.21875 1.296875 1.21875 0.703125 0.78125 0.703125 0.78125 0.671875 0.78125 0.671875</float_array>
+					<technique_common>
+						<accessor source="#houdai_joint_0-mesh-map-0-array" count="112" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="houdai_joint_0-mesh-colors">
+					<float_array id="houdai_joint_0-mesh-colors-array" count="336">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#houdai_joint_0-mesh-colors-array" count="112" stride="3">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="houdai_joint_0-mesh-vertices">
+					<input semantic="POSITION" source="#houdai_joint_0-mesh-positions" />
+				</vertices>
+				<polylist material="houdai_mat-material" count="55">
+					<input semantic="VERTEX" source="#houdai_joint_0-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#houdai_joint_0-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#houdai_joint_0-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#houdai_joint_0-mesh-colors" offset="3" />
+					<vcount>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 4 3 3</vcount>
+					<p>0 0 0 0 1 1 1 0 2 2 2 0 3 3 3 0 3 3 3 0 2 2 2 0 4 4 1 0 5 5 0 0 5 5 0 0 4 4 1 0 6 6 6 0 7 7 7 0 7 7 7 0 6 6 6 0 8 8 8 0 9 9 9 0 9 9 9 0 8 8 8 0 10 10 10 0 11 11 11 0 11 11 11 0 10 10 10 0 12 12 8 0 13 13 9 0 13 13 9 0 12 12 8 0 14 14 6 0 15 15 7 0 15 15 7 0 14 14 6 0 1 1 1 0 0 0 0 0 16 14 6 0 17 17 7 0 18 18 9 0 19 1 8 0 19 1 8 0 18 18 9 0 20 20 11 0 21 2 10 0 21 2 10 0 20 20 11 0 22 22 9 0 23 4 8 0 23 4 8 0 22 22 9 0 24 24 7 0 25 6 6 0 25 6 6 0 24 24 7 0 26 26 0 0 27 8 1 0 27 8 1 0 26 26 0 0 28 28 3 0 29 10 2 0 29 10 2 0 28 28 3 0 30 30 0 0 31 12 1 0 31 12 1 0 30 30 0 0 17 17 7 0 16 14 6 0 8 8 32 0 19 1 33 0 21 2 34 0 10 10 35 0 10 10 35 0 21 2 34 0 23 4 36 0 12 12 37 0 12 12 37 0 23 4 36 0 25 6 38 0 14 14 39 0 14 14 39 0 25 6 38 0 27 8 40 0 1 1 41 0 1 1 41 0 27 8 40 0 29 10 42 0 2 2 43 0 2 2 43 0 29 10 42 0 31 12 44 0 4 4 45 0 4 4 45 0 31 12 44 0 16 14 46 0 6 6 47 0 6 6 47 0 16 14 46 0 19 1 33 0 8 8 32 0 48 17 48 0 49 17 49 0 50 50 50 0 51 50 51 0 51 50 51 0 50 50 50 0 52 52 49 0 53 52 48 0 53 52 48 0 52 52 49 0 54 54 50 0 55 54 51 0 55 54 51 0 54 54 50 0 56 56 49 0 57 56 48 0 57 56 48 0 56 56 49 0 58 24 50 0 59 24 51 0 60 17 48 0 61 17 49 0 62 50 50 0 63 50 51 0 63 50 51 0 62 50 50 0 64 52 49 0 65 52 48 0 65 52 48 0 64 52 49 0 66 54 50 0 67 54 51 0 67 54 51 0 66 54 50 0 68 56 49 0 69 56 48 0 69 56 48 0 68 56 49 0 70 24 50 0 71 24 51 0 66 28 72 0 64 28 73 0 62 28 74 0 68 28 75 0 68 28 75 0 62 28 74 0 61 28 76 0 70 28 77 0 59 20 76 0 48 20 77 0 51 20 75 0 57 20 74 0 57 20 74 0 51 20 75 0 53 20 72 0 55 20 73 0 49 28 76 0 58 28 77 0 56 28 75 0 50 28 74 0 50 28 74 0 56 28 75 0 54 28 72 0 52 28 73 0 71 20 76 0 60 20 77 0 63 20 75 0 69 20 74 0 69 20 74 0 63 20 75 0 65 20 72 0 67 20 73 0 22 96 96 0 18 96 96 0 17 96 96 0 24 96 96 0 24 96 96 0 17 96 96 0 30 96 96 0 26 96 96 0 11 11 11 0 13 13 9 0 102 102 102 0 15 15 7 0 102 15 102 0 13 13 9 0 102 102 102 0 15 15 7 0 0 0 0 0 0 0 0 0 3 3 3 0 102 102 102 0 5 5 0 0 102 5 102 0 3 3 3 0 102 102 102 0 5 5 0 0 7 7 7 0 7 7 7 0 9 9 9 0 102 102 102 0 11 11 11 0 102 11 102 0 9 9 9 0 71 96 48 0 58 96 49 0 49 96 50 0 60 96 51 0 26 96 96 0 30 96 96 0 28 96 96 0 18 96 96 0 22 96 96 0 20 96 96 0</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="houdai_joint_0-skin" name="skinCluster_houdai_joint_0">
+			<skin source="#houdai_joint_0-mesh">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="houdai_joint_0-skin-joints">
+					<IDREF_array id="houdai_joint_0-skin-joints-array" count="2">houdai_joint_0 houdai_joint_1</IDREF_array>
+					<technique_common>
+						<accessor source="#houdai_joint_0-skin-joints-array" count="2" stride="1">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<!--The inverse bind pose for a joint is given by the inverse bind pose of the parent joint (where present) multiplied by the inverse of the current joint's transformation matrix.-->
+				<source id="houdai_joint_0-skin-bind_poses">
+					<float_array id="houdai_joint_0-skin-bind_poses-array" count="32">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -16.71826 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#houdai_joint_0-skin-bind_poses-array" count="2" stride="16">
+							<param name="TRANSFORM" type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="houdai_joint_0-skin-weights">
+					<!--The BMD format does not have any concept of 'weights', instead each vertex is assigned to one bone-->
+					<float_array id="houdai_joint_0-skin-weights-array" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#houdai_joint_0-skin-weights-array" count="1" stride="1">
+							<param name="WEIGHT" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#houdai_joint_0-skin-joints" />
+					<input semantic="INV_BIND_MATRIX" source="#houdai_joint_0-skin-bind_poses" />
+				</joints>
+				<!--Each vertex will be assigned to only one bone with a weight of 1-->
+				<vertex_weights count="112">
+					<input semantic="JOINT" source="#houdai_joint_0-skin-joints" offset="0" />
+					<input semantic="WEIGHT" source="#houdai_joint_0-skin-weights" offset="1" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<!--This list contains two values for each vertex, the first is the bone ID and the second is the index of the vertex weight '1' (0)-->
+					<v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<!--This lists each of the 'bones' in the BMD model, listing each bone's individual Scale, Rotation, Translation transformation in the reverse of the order in which they should be multiplied to form an SRT  matrix. This will then be multiplied recursively by the parents' transformations to get the final transformation for this joint.-->
+			<node id="houdai_joint_0" name="houdai_joint_0" sid="houdai_joint_0" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+				<node id="houdai_joint_1" name="houdai_joint_1" sid="houdai_joint_1" type="JOINT">
+					<translate sid="translate">0 16.71826 0</translate>
+					<rotate sid="rotationZ">0 0 1 0</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 0</rotate>
+					<scale sid="scale">1 1 1</scale>
+				</node>
+			</node>
+			<node id="houdai_joint_0-node" name="houdai_joint_0-node" type="NODE">
+				<instance_controller url="#houdai_joint_0-skin">
+					<skeleton>#houdai_joint_0</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="houdai_mat-material" target="#houdai_mat-material">
+								<bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene" />
+	</scene>
+</COLLADA>

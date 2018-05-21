@@ -2,24 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Elevator : MonoBehaviour {
-    public GameObject lift;
-    public int time = 10;
-    private bool on = false;
-    private void OnTriggerEnter(Collider other)
+public class Elevator : MonoBehaviour
+{
+    public bool moved;
+    public float speed;
+    Vector3 pos;
+    public float destination;
+    // Use this for initialization
+    void Start()
     {
-            on = true;
+
     }
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-        if (time >= 0)
+        if (moved && gameObject.transform.position.y <= destination)
         {
-            if (on == true)
+            pos = gameObject.transform.position;
+            pos += Vector3.up * Time.deltaTime * speed;
+            gameObject.transform.position = pos;
+        }
+        if (moved && gameObject.transform.position.y >= destination)
+        {
+            if (gameObject.transform.eulerAngles.x <= 100)
             {
-                Vector3 pos = lift.transform.position;
-                lift.transform.position = new Vector3(pos.x,pos.y + 1,pos.z);
-                time --;
+                gameObject.transform.Rotate(new Vector3(speed * Time.deltaTime, 0, 0));
             }
         }
-	}
+
+    }
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (moved == false)
+        {
+            moved = true;
+
+        }
+    }
 }

@@ -85,6 +85,7 @@
     <Compile Include="Assets\GearButton.cs" />
     <Compile Include="Assets\Mover.cs" />
     <Compile Include="Assets\PSwitch2.cs" />
+    <Compile Include="Assets\Seesaw.cs" />
     <Compile Include="Assets\Trampoline.cs" />
     <Compile Include="Assets\Trampolineleft.cs" />
     <Compile Include="Assets\Trampolineright.cs" />

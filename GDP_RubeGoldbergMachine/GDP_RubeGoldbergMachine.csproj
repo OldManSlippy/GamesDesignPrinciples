@@ -83,6 +83,7 @@
     <Compile Include="Assets\Cannon.cs" />
     <Compile Include="Assets\Elevator.cs" />
     <Compile Include="Assets\GearButton.cs" />
+    <Compile Include="Assets\MarioGrow.cs" />
     <Compile Include="Assets\Mover.cs" />
     <Compile Include="Assets\PSwitch2.cs" />
     <Compile Include="Assets\Seesaw.cs" />

@@ -7,7 +7,7 @@ public class Cannon : MonoBehaviour
     public Rigidbody ball;
     private void OnTriggerEnter(Collider other)
     {
-            ball.AddForce(new Vector3(500, 0, 0), ForceMode.Acceleration);
+            ball.AddForce(new Vector3(700, 0, 0), ForceMode.Acceleration);
 
     }
 }
